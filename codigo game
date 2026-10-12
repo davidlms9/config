@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    printf("Olá Bem-Vindo ao jogo \n \nO objetivo é escolher um numero de 0️⃣-1️⃣0️⃣0️⃣0️⃣ e outra pessoa tem que escolher também e têm que acertar qual era de cada um.");
+    
+    int escolha, palpite; 
+    
+    printf("\n\nEscolhe um numero entre 0-1000: "); 
+    scanf("%d", &escolha); 
+
+    while(palpite != escolha){
+    printf("\nTenta adivinhar o numero: ");
+    scanf("%d", &palpite);
+    
+    if (palpite == escolha) {
+        printf("ADVINHAS-TE 🎉🎉🎉\n");
+    } else if(palpite<escolha) {
+        printf("maior\n");
+    }
+    else{
+        printf ("menor\n");
+    }
+    }
+}
