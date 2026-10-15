@@ -15,10 +15,10 @@ int main() {
     if (palpite == escolha) {
         printf("ADVINHAS-TE 🎉🎉🎉\n");
     } else if(palpite<escolha) {
-        printf("maior\n");
+        printf("\n➕\n");
     }
     else{
-        printf ("menor\n");
+        printf ("\n➖\n");
     }
     }
 }
